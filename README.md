@@ -35,6 +35,7 @@ Our total FSM is a three level FSM. The most outer layer one is called “Stage�
 For calculating the absolute value of each DFT value result, we just need to do one more stage but with giving the CMA same memory entry but with flipped sign bit of imaginary part of one of the inputs because in complex manipulation we have:
 
 C = a + i b
+
 |C|^2 = (a + i b ) * (a – i b)
 
 This approach can easily be implemented in our design with few changes in control signals of CMA. And at the end we sweep among all entries and will find the maximum value. Also we will show the frequency on the seven segments on the board.
